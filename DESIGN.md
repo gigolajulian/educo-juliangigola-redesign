@@ -227,7 +227,7 @@ Every corner is square (0px): buttons, panels, toggles, tags, images. The only c
 - **Mobile:** below 1000px a 38px square menu button opens a full-screen sheet that wipes down via clip-path (520ms ease-in-out), with display-size links ruled by hairlines and stacked 54px CTAs.
 
 ### Booker (tours and student cuts)
-Every Calendly tour link, and every Squire student-cut link (educo-academy-san-jose), opens a native `<dialog>` (built in edu.js, plain link without JS): a sheet panel sliding in from the right (min(620px, 100%), full screen on phones) over a 50% ink backdrop, with a steel header (H-M "Book a tour", one line of address, square close), Calendly inline in an iframe, and a mono footer "Scheduling by Calendly / Open in a new tab". Enrollment stays a normal link: the Edlumina portal refuses framing.
+Every Calendly tour link, and every Squire student-cut link (educo-academy-san-jose), opens a native `<dialog>` (built in edu.js, plain link without JS): a sheet panel sliding in from the right (min(620px, 100%), full screen on phones) over a 50% ink backdrop, with a steel header (H-M "Book a tour" or "Book a student cut", one line of context, square close), the booking flow in an iframe, and a mono footer naming the provider (Calendly or Squire) with "Open in a new tab". Enrollment stays a normal link: the Edlumina portal refuses framing.
 
 ### Figures (plates)
 Every photograph is a figure: square-cornered frame on steel-2, image at grayscale(1) contrast(1.08), corner crop marks, and a mono caption below with a bold "Fig. n" then a short description. Figures are numbered in reading order across the page.
