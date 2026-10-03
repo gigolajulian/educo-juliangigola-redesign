@@ -1,0 +1,124 @@
+{
+  "title": "Choose the visual world for ĒDUCŌ",
+  "question": "The roll assigned The Kit. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Kit",
+      "kicker": "THE ROLL",
+      "lineage": "Japanese shear & tool catalogues (spec sheets, line drawings, model numbers), the kit every barber student is issued",
+      "thesis": "The program sold like a precision instrument: one model, ĒDUCŌ-1000, every spec on the table.",
+      "palette": ["#1A1A1A", "#D7D8D5", "#FAFAF8", "#00A3C4"],
+      "materials": ["brushed steel grey", "spec-sheet white", "B&W technique photography", "dashed construction geometry from the logo"],
+      "viewport": "A catalogue cover: the dashed square/circle/triangle + ĒDUCŌ wordmark huge, one B&W hands-and-shears photo, a spec table (1,000 hrs · CA license · Full-time / Part-time · from 6–7 months) and 'Enroll' as the order button. '/Paradox/' lineage line in PRDX Barbicide blue.",
+      "risk": "Can read cold or product-y if the people (educators, students) don't carry as much weight as the specs.",
+      "raised": [
+        {"from": "challenger-seed-packet", "raise": "Every offering leads with its promise and turns over to its spec/instructions (schedule, requirements, cost)."},
+        {"from": "challenger-console", "raise": "Capped seats are drawn as slots: residency days 2–3 show 10 seat cells, filled or empty."},
+        {"from": "challenger-darkroom", "raise": "Enrollment is fixed stations in order: Tour → Apply → Enroll → Start, never a menu."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Vorkurs",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Bauhaus school curriculum (the ĒDUCŌ logo's square/circle/triangle are the Bauhaus shapes)",
+      "thesis": "ĒDUCŌ as a modern Bauhaus: the curriculum wheel is the site.",
+      "palette": ["#111111", "#F1EFE8", "#E2361C", "#1F4FA8"],
+      "materials": ["primary-colour geometry", "grotesk", "curriculum diagrams"],
+      "viewport": "Curriculum wheel with the three shapes, program at the centre, Enroll beneath.",
+      "risk": "Familiar: Bauhaus pastiche is a well-worn design-school look."
+    },
+    {
+      "id": "challenger-seed-packet",
+      "label": "Seed Packet Rack",
+      "verdict": "competitive",
+      "lineage": "hardware-store seed packets",
+      "thesis": "Each offering is a packet: painted promise on the front, sowing instructions on the back.",
+      "palette": ["#C8402A", "#6C8A3A", "#E9DFC6", "#8E9294"],
+      "materials": ["gouache fronts", "almanac backs"],
+      "viewport": "A rack of packets: Licensing, Core Fundamentals, Workshops, Residency.",
+      "case": "Holds clarity (promise/instructions is a great selling grammar) but barbers don't identify with gardening.",
+      "risk": "Whimsy undercuts 'precision'.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-seed-packet-rack-hero.webp"
+    },
+    {
+      "id": "challenger-darkroom",
+      "label": "Darkroom Safelight",
+      "verdict": "declined",
+      "lineage": "photo darkrooms",
+      "thesis": "Students develop like prints, station by station.",
+      "palette": ["#B5541C", "#1B1712", "#C9C3B8"],
+      "materials": ["amber safelight", "silver gelatin"],
+      "viewport": "Amber room, a print emerging.",
+      "case": "Their B&W photos fit, but the develop gimmick already belongs to the /Paradox/ redesign.",
+      "risk": "Amber murk, low legibility.",
+      "kept": "Fixed stations in order.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-darkroom-safelight-bay-hero.webp"
+    },
+    {
+      "id": "challenger-console",
+      "label": "Console Dashboard",
+      "verdict": "declined",
+      "lineage": "game console system menus",
+      "thesis": "Programs float as monoliths in fog.",
+      "palette": ["#05070D", "#CFD8E6", "#F2A93B"],
+      "materials": ["particle fog", "glowing cubes"],
+      "viewport": "Dark void, program towers.",
+      "case": "Spectacle buries the program facts.",
+      "risk": "Heavy, slow, off-brand.",
+      "kept": "Empty slots read as hollows."
+    },
+    {
+      "id": "challenger-specimen",
+      "label": "Variable Font Specimen",
+      "verdict": "declined",
+      "lineage": "type foundry specimens",
+      "thesis": "ĒDUCŌ as a typeface.",
+      "palette": ["#F5F5F2", "#0E0E0E", "#FF4D00"],
+      "materials": ["giant glyphs"],
+      "viewport": "Giant Ē morphing.",
+      "case": "No people, no program.",
+      "risk": "Type nerd-only.",
+      "kept": "Hierarchy by scale contrast."
+    },
+    {
+      "id": "challenger-akari",
+      "label": "Akari Workshop",
+      "verdict": "declined",
+      "lineage": "Noguchi paper lamps",
+      "thesis": "Programs as glowing paper volumes.",
+      "palette": ["#F3E9D2", "#B9925A", "#2B2724", "#C8412B"],
+      "materials": ["washi", "bamboo ribs"],
+      "viewport": "Dim room of lit lamps.",
+      "case": "Warm calm, wrong energy for a cutting school.",
+      "risk": "Soft and vague.",
+      "kept": "One light source: one action lit per view."
+    },
+    {
+      "id": "challenger-versailles",
+      "label": "Versailles Vistas",
+      "verdict": "declined",
+      "lineage": "French formal gardens",
+      "thesis": "Axial path from palace to canal.",
+      "palette": ["#3E5B34", "#D8CBA8", "#B8923A"],
+      "materials": ["parterre", "gilt"],
+      "viewport": "Axial garden plan.",
+      "case": "Pomp, no relation to the audience.",
+      "risk": "Costume.",
+      "kept": "One axial path the visitor follows."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean, modern school landing page executed impeccably.",
+    "palette": ["#FFFFFF", "#111111", "#00A3C4"],
+    "materials": ["hero photo", "feature cards", "testimonial carousel"],
+    "viewport": "Big photo hero, 'Become a barber', Enroll button, three benefit cards.",
+    "risk": "Indistinguishable from every other trade school by design."
+  },
+  "steer": true
+}
