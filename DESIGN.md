@@ -223,7 +223,7 @@ Every corner is square (0px): buttons, panels, toggles, tags, images. The only c
 - **Internal Padding:** clamp 20 to 40px.
 
 ### Navigation
-- **Strip:** 60px sticky bar. ĒDUCŌ wordmark (92px) then, from 640px, a "by" + /Paradox/ wordmark (76px) behind a hairline divider. Nav links at Archivo wdth 112, 600, 0.875rem; hover fills steel-2; the current page gets a 2px underline offset 6px. Enroll and Book a tour sit right as small buttons.
+- **Strip:** 60px sticky bar. ĒDUCŌ wordmark (92px) then, from 640px, a "by" + /Paradox/ wordmark (76px) behind a hairline divider, its own link to the /Paradox/ site. Nav links at Archivo wdth 112, 600, 0.875rem; hover fills steel-2; the current page gets a 2px underline offset 6px. Enroll and Book a tour sit right as small buttons.
 - **Mobile:** below 1000px a 38px square menu button opens a full-screen sheet that wipes down via clip-path (520ms ease-in-out), with display-size links ruled by hairlines and stacked 54px CTAs.
 
 ### Tour Booker
