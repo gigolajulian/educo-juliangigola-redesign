@@ -230,7 +230,7 @@ Every corner is square (0px): buttons, panels, toggles, tags, images. The only c
 Every photograph is a figure: square-cornered frame on steel-2, image at grayscale(1) contrast(1.08), corner crop marks, and a mono caption below with a bold "Fig. n" then a short description. Figures are numbered in reading order across the page.
 
 ### Part Callouts
-On the cover plate, hairline callouts label parts of the photograph: a 9px open sheet-coloured circle, a 1px sheet leader (28 to 64px), and a mono label in an ink-on-sheet chip. They can point right or left and are decorative (aria-hidden).
+On the cover plate, hairline callouts label parts of the photograph: a 9px open sheet-coloured circle, a 1px sheet leader (28 to 64px), and a mono label in an ink-on-sheet chip. They point right and are decorative (aria-hidden). The cover labels Comb and Shear only.
 
 ### Spec Table
 A definition list under a 1.5px ink top rule. Each row: mono muted key followed by a dotted leader that fills to the value column; value in Archivo wdth 112 at 600, numeric parts in Geist Mono 600 tabular; an optional small graphite note below. Used on the cover plate, the configurator and offers.

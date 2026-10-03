@@ -165,7 +165,6 @@ p { text-wrap: pretty; }
 .callout::before { content: ""; order: -2; width: 9px; height: 9px; border: 1.5px solid var(--sheet); border-radius: 50%; flex: none; }
 .callout::after { content: ""; order: -1; width: clamp(28px, 5vw, 64px); border-top: 1px solid var(--sheet); }
 .callout b { font: 600 0.6875rem/1 var(--mono); color: var(--ink); background: var(--sheet); padding: 4px 6px; }
-.callout--l { flex-direction: row-reverse; transform: translate(calc(-100% + 4.5px), -50%); }
 
 .cover__photo img { object-position: 50% 35%; }
 .cover__plate { background: var(--sheet); border: 1px solid var(--ink); padding: 16px 18px 6px; margin-top: 16px; }
