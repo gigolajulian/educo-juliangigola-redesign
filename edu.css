@@ -83,7 +83,9 @@ p { text-wrap: pretty; }
 @supports (backdrop-filter: blur(1px)) { .strip { backdrop-filter: blur(10px) saturate(1.1); } }
 .strip__inner { display: flex; align-items: center; gap: 18px; height: 60px; }
 .strip__logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex: none; }
-.strip__logo img { width: 92px; }
+.strip__logo > a:first-child img { width: 92px; }
+.strip__by { text-decoration: none; transition: color 200ms var(--ease-out); }
+.strip__by:hover { color: var(--ink); }
 .strip__by { display: none; align-items: center; gap: 8px; font-family: var(--mono); font-size: 0.75rem; color: var(--mute); padding-left: 12px; border-left: 1px solid var(--line); }
 .strip__by img { width: 76px; }
 .strip__nav { display: none; margin-left: auto; }
@@ -479,3 +481,24 @@ p { text-wrap: pretty; }
   .price dt { flex: 1 0 100%; }
   .price dd { white-space: normal; }
 }
+
+/* ---------- Tour booker: Calendly inside a Kit panel ---------- */
+.booker {
+  position: fixed; inset: 0 0 0 auto; margin: 0; padding: 0; border: 0; border-left: 1px solid var(--ink);
+  width: min(620px, 100%); height: 100dvh; max-width: none; max-height: none;
+  background: var(--sheet); color: var(--ink); display: none; flex-direction: column;
+  transition: transform 520ms var(--ease-out), overlay 520ms allow-discrete, display 520ms allow-discrete;
+}
+.booker[open] { display: flex; }
+@starting-style { .booker[open] { transform: translateX(100%); } }
+.booker:not([open]) { transform: translateX(100%); transition-timing-function: var(--ease-in-out); }
+.booker::backdrop { background: rgba(26, 26, 26, 0.5); transition: background-color 520ms var(--ease-out), overlay 520ms allow-discrete, display 520ms allow-discrete; }
+@starting-style { .booker[open]::backdrop { background: rgba(26, 26, 26, 0); } }
+.booker__top { display: flex; justify-content: space-between; align-items: start; gap: 16px; padding: 18px var(--gutter); border-bottom: 1.5px solid var(--ink); background: var(--steel); }
+.booker__top p { margin: 6px 0 0; font-size: 0.9375rem; color: var(--ink-2); }
+.booker__close { display: inline-grid; flex: none; }
+.booker__body { position: relative; flex: 1; min-height: 0; }
+.booker__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.booker__wait { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; color: var(--mute); }
+.booker__foot { display: flex; justify-content: space-between; gap: 12px; padding: 10px var(--gutter); border-top: 1px solid var(--ink); color: var(--mute); }
+.booker__foot a { color: var(--ink); }
