@@ -226,8 +226,8 @@ Every corner is square (0px): buttons, panels, toggles, tags, images. The only c
 - **Strip:** 60px sticky bar. ĒDUCŌ wordmark (92px) then, from 640px, a "by" + /Paradox/ wordmark (76px) behind a hairline divider, its own link to the /Paradox/ site. Nav links at Archivo wdth 112, 600, 0.875rem; hover fills steel-2; the current page gets a 2px underline offset 6px. Enroll and Book a tour sit right as small buttons.
 - **Mobile:** below 1000px a 38px square menu button opens a full-screen sheet that wipes down via clip-path (520ms ease-in-out), with display-size links ruled by hairlines and stacked 54px CTAs.
 
-### Tour Booker
-Every Calendly tour link opens a native `<dialog>` (built in edu.js, plain link without JS): a sheet panel sliding in from the right (min(620px, 100%), full screen on phones) over a 50% ink backdrop, with a steel header (H-M "Book a tour", one line of address, square close), Calendly inline in an iframe, and a mono footer "Scheduling by Calendly / Open in a new tab". Enrollment stays a normal link: the Edlumina portal refuses framing.
+### Booker (tours and student cuts)
+Every Calendly tour link, and every Squire student-cut link (educo-academy-san-jose), opens a native `<dialog>` (built in edu.js, plain link without JS): a sheet panel sliding in from the right (min(620px, 100%), full screen on phones) over a 50% ink backdrop, with a steel header (H-M "Book a tour", one line of address, square close), Calendly inline in an iframe, and a mono footer "Scheduling by Calendly / Open in a new tab". Enrollment stays a normal link: the Edlumina portal refuses framing.
 
 ### Figures (plates)
 Every photograph is a figure: square-cornered frame on steel-2, image at grayscale(1) contrast(1.08), corner crop marks, and a mono caption below with a bold "Fig. n" then a short description. Figures are numbered in reading order across the page.
