@@ -508,3 +508,20 @@ p { text-wrap: pretty; }
 /* ---------- Student cuts ---------- */
 .cuts { display: grid; gap: 32px; }
 @media (min-width: 960px) { .cuts { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 80px); align-items: start; } }
+
+/* ---------- Scroll reveals (classes added by edu.js only when motion is welcome) ---------- */
+.rv { opacity: 0; transform: translateY(14px); transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); transition-delay: calc(var(--i, 0) * 70ms); }
+.rv.is-in { opacity: 1; transform: none; }
+/* Plates are exposed top to bottom, then the crop marks snap on */
+.rv-fig .fig__frame { clip-path: inset(0 0 100% 0); transition: clip-path 1100ms var(--ease-in-out) calc(var(--i, 0) * 70ms); }
+.rv-fig.is-in .fig__frame { clip-path: inset(0); }
+.rv-fig::before, .rv-fig::after { opacity: 0; transform: scale(0.4); transition: opacity 300ms var(--ease-out) 700ms, transform 400ms var(--ease-out) 700ms; }
+.rv-fig.is-in::before, .rv-fig.is-in::after { opacity: 1; transform: none; }
+.rv-fig figcaption { opacity: 0; transition: opacity 500ms var(--ease-out) 600ms; }
+.rv-fig.is-in figcaption { opacity: 1; }
+/* Leaders are drawn left to right, row by row */
+.rv-lead dt::after, .price.rv-lead > div::after { transform: scaleX(0); transform-origin: left; transition: transform 700ms var(--ease-out) calc(var(--r, 0) * 80ms + 250ms); }
+.rv-lead.is-in dt::after, .price.rv-lead.is-in > div::after { transform: none; }
+/* Enroll markers are stamped in sequence */
+.station.rv::before { transform: scale(0); transition: transform 450ms var(--ease-out) calc(var(--i, 0) * 120ms + 200ms); }
+.station.rv.is-in::before { transform: none; }

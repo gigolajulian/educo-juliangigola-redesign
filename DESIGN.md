@@ -253,6 +253,13 @@ Four ordered stations joined by a dashed path (vertical on mobile, horizontal at
 ### Pass Cards and Seat Slots
 Residency passes share one bordered sheet split by ink rules; the top tier is the ink-filled one. Each pass: title with a tag, a name line, a mono price with the regular price struck through and a mono note, a ruled inclusions list, a button pinned to the bottom. Capped capacity is drawn as 10 dashed square slots in a row (max 320px) with a mono caption.
 
+### Scroll Reveals
+Motion follows the Drawn Not Lifted rule: things are exposed, drawn or stamped, never floated in or bounced. edu.js tags elements once, an IntersectionObserver (threshold 0.12, bottom margin -8%) adds `is-in` once, and nothing is tagged under reduced motion or without JS, so content is never hidden by default.
+- **Plates** (every `.fig` except the cover): the frame is exposed top to bottom via clip-path (1100ms ease-in-out), the crop marks snap on at 700ms, and the caption fades in at 600ms.
+- **Leaders** (every `.spec` and the price sheet): the dotted leaders draw left to right with scaleX, 80ms per row after 250ms.
+- **Enroll stations:** markers stamp in at scale 0 to 1, 120ms apart.
+- **Everything else** (section heads, parts, chips, people, reports, passes, days, FAQ, close): a 14px rise plus a fade over 700ms ease-out, staggered 70ms per sibling and capped at the sixth.
+
 ## Do's and Don'ts
 
 ### Do:

@@ -81,3 +81,19 @@ document.addEventListener("click", (e) => {
   booker.showModal();
   document.body.style.overflow = "hidden";
 });
+
+/* Scroll reveals, in The Kit's language: plates are exposed, leaders are drawn, marks are stamped.
+   Nothing hides without JS or with reduced motion. */
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+  const items = new Set();
+  const mark = (el, i = 0, cls = "rv") => { el.classList.add(cls); el.style.setProperty("--i", Math.min(i, 6)); items.add(el); };
+  document.querySelectorAll(".sec:not(.cover) .sec__head, .lineage > div, .residency > div, .compare, .parts, .focus, .people, .reports, .stations, .faq, .passes, .days, .cuts, .close__grid, .comply")
+    .forEach((g) => [...g.children].forEach((c, i) => mark(c, i)));
+  document.querySelectorAll(".config, .offer, .price").forEach((el) => mark(el));
+  document.querySelectorAll(".fig:not(.cover__photo)").forEach((f) => mark(f, 0, "rv-fig"));
+  document.querySelectorAll(".spec, .price").forEach((s) => { [...s.children].forEach((r, i) => r.style.setProperty("--r", i)); mark(s, 0, "rv-lead"); });
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+  items.forEach((el) => io.observe(el));
+}
