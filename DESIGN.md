@@ -232,6 +232,9 @@ Every Calendly tour link, and every Squire student-cut link (educo-academy-san-j
 ### Figures (plates)
 Every photograph is a figure: square-cornered frame on steel-2, image at grayscale(1) contrast(1.08), corner crop marks, and a mono caption below with a bold "Fig. n" then a short description. Figures are numbered in reading order across the page.
 
+### Cover Mark
+The stacked logo (paper version) sits inside the Fig. 1 photo, bottom-right at 5% insets, clamp(90px, 9vw, 150px) wide, drawing down on load. The spec plate overlaps the photo's bottom-left only from 1200px; below that it stacks under the photo.
+
 ### Part Callouts
 On the cover plate, hairline callouts label parts of the photograph: a 9px open sheet-coloured circle, a 1px sheet leader (28 to 64px), and a mono label in an ink-on-sheet chip. They point right and are decorative (aria-hidden). The cover labels Comb and Shear only.
 
